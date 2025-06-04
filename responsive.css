@@ -1,0 +1,57 @@
+@media screen and (min-width: 768px) {
+  .container-img-banner {
+    height: 729px;
+  }
+
+  .image-banner-mobile {
+    display: none;
+  }
+
+  .image-banner-tablet {
+    display: block;
+    width: 100%;
+  }
+
+  .box-text {
+    top: 18px;
+    gap: 24px;
+  }
+
+  .brand-banner {
+    font-size: 56px;
+    max-width: 396px;
+    letter-spacing: 2px;
+    line-height: 58px;
+  }
+
+  .p-banner {
+    max-width: 349px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-img-banner {
+    display: flex;
+    justify-content: right;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  .box-text {
+    text-align: left;
+    align-items: start;
+    left: 12%;
+  }
+
+  .image-banner-desktop {
+    display: block;
+  }
+
+  .image-banner-mobile {
+    display: none;
+  }
+
+  .image-banner-tablet {
+    display: none;
+  }
+}
