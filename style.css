@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: white;
 }
 
 .container-img-banner {
@@ -230,7 +230,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  height: 424px;
 }
 
 .product-yx1 {
@@ -263,4 +262,65 @@ body {
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 2px;
+}
+
+.box-best-gear {
+  padding: 60px 24px;
+}
+
+.best-gear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  max-width: 100%;
+}
+
+.box-image-bg {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-best-gear {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-best-gear-tablet {
+  display: none;
+}
+
+.image-best-gear-desktop {
+  display: none;
+}
+
+.text-best-gear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 100%;
+}
+
+.title-bg {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.span-best-gear {
+  color: #d87d4a;
+}
+
+.paragraph-bg {
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
+  color: #8d8d8d;
 }
