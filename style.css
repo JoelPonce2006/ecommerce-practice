@@ -5,13 +5,79 @@
   font-family: "MANROPE";
 }
 
+html,
 body {
   background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.audiophile-header {
+  padding: 24px;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  background-color: #191919;
+}
+
+.audiophile-header-container {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.menu-icon {
+  color: white;
+  background: none;
+  border: none;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logo {
+  font-size: 22px;
+  color: #ffffff;
+  display: block;
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+  gap: 34px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  color: #d87d4a;
+}
+
+.cart-icon {
+  background: none;
+  border: none;
+  color: #ffffff;
+  height: 20px;
 }
 
 .container-img-banner {
   background-color: #121212;
-  height: 600px;
+  min-height: 100dvh;
   position: relative;
 }
 
@@ -268,7 +334,23 @@ body {
   padding: 60px 24px;
 }
 
-.best-gear {
+.categories-section-container {
+  padding: 60px 24px;
+  width: 100%;
+}
+
+.categories-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.category {
+  width: 100%;
+  margin-top: 55px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,4 +405,56 @@ body {
   font-size: 15px;
   line-height: 25px;
   color: #8d8d8d;
+  position: relative;
+  padding: 88px 24px 24px 24px;
+}
+
+.product-image {
+  position: absolute;
+  top: -55px;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.category h3 {
+  letter-spacing: 1.07px;
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.redirection {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-link {
+  color: #7d7d7d;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.shop-link:hover {
+  color: #d87d4a;
+}
+
+.arrow-icon {
+  width: 8px;
+  height: 12px;
 }

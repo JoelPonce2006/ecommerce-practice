@@ -1,6 +1,20 @@
 @media screen and (min-width: 768px) {
+  .audiophile-header {
+    padding: 32px 40px;
+  }
+
+  .audiophile-header-container {
+    grid-template-columns: max-content max-content 1fr;
+    gap: 42px;
+  }
+
+  .cart-icon {
+    display: flex;
+    justify-content: end;
+  }
+
   .container-img-banner {
-    height: 729px;
+    min-height: 100dvh;
   }
 
   .image-banner-mobile {
@@ -116,6 +130,32 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .categories-section-container {
+    padding: 48px 40px;
+  }
+
+  .categories-section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .audiophile-header {
+    padding: 32px 12%;
+  }
+
+  .audiophile-header-container {
+    grid-template-columns: max-content max-content max-content;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+
   .container-img-banner {
     display: flex;
     justify-content: right;
@@ -288,5 +328,15 @@
 
   .paragraph-bg {
     max-width: 445px;
+  }
+
+  .categories-section-container {
+    padding: 100px 12%;
+  }
+
+  .categories-section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
   }
 }
