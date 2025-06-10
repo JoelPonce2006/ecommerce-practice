@@ -39,9 +39,7 @@ body {
 }
 
 .logo {
-  font-size: 22px;
-  color: #ffffff;
-  display: block;
+  display: flex;
 }
 
 .nav {
@@ -538,14 +536,17 @@ body {
   gap: 16px;
 }
 
-.social img,
-.social-p img {
-  transition: filter 0.3s ease;
+.social svg,
+.social-p svg {
   cursor: pointer;
 }
 
-.social img:hover,
-.social-p img:hover {
-  filter: invert(55%) sepia(42%) saturate(538%) hue-rotate(339deg)
-    brightness(94%) contrast(89%);
+.social path,
+.social-p path {
+  transition: 0.2s ease;
+}
+
+.social svg:hover path,
+.social-p svg:hover path {
+  fill: #d87d4a;
 }
