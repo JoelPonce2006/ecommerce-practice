@@ -379,6 +379,15 @@
     gap: 10px;
   }
 
+  .category {
+    padding: 116px 108px 30px 108px;
+  }
+
+  .product-image {
+    width: 175px;
+    height: 200px;
+  }
+
   .footer-container {
     padding: 100px 12%;
     margin: 0 auto;
