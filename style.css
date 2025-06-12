@@ -129,6 +129,10 @@ body {
 }
 
 .button-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   border: none;
   background-color: #d87d4a;
   width: 160px;
@@ -550,4 +554,69 @@ body {
 .social svg:hover path,
 .social-p svg:hover path {
   fill: #d87d4a;
+}
+
+.product-detail {
+  padding: 60px 24px;
+}
+
+.product-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.product-detail-image-container {
+  width: 100%;
+  height: 352px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.product-detail-image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.product-detail-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-detail-new-product {
+  font-size: 14px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #fbaf85;
+}
+
+.product-detail-title {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.product-detail-description {
+  font-size: 15px;
+  line-height: 25px;
+  color: #9b9b9b;
 }
