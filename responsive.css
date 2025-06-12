@@ -192,6 +192,18 @@
   .product-detail-description {
     max-width: 572px;
   }
+
+  .collage {
+    flex-direction: row;
+  }
+
+  .collage-container {
+    padding: 48px 40px;
+  }
+
+  .product-main {
+    padding-top: 89px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -490,5 +502,26 @@
 
   .product-detail-reverse .product-detail-container {
     flex-direction: row-reverse;
+  }
+
+  .collage-img-1,
+  .collage-img-2 {
+    height: 280px;
+  }
+
+  .collage-container {
+    padding: 100px 12%;
+  }
+
+  .collage {
+    gap: 30px;
+  }
+
+  .collage-container-left {
+    gap: 32px;
+  }
+
+  .collage-img-3 {
+    height: 592px;
   }
 }
