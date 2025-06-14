@@ -636,6 +636,22 @@ body {
   padding: 60px 24px;
 }
 
+.product-detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px 24px 60px;
+}
+
+.product-detail-page .product-detail-content {
+  text-align: left;
+  align-items: start;
+}
+
+.product-detail-page .product-detail-see-product {
+  display: none;
+}
+
 .product-detail-container {
   display: flex;
   flex-direction: column;
@@ -644,6 +660,50 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
+}
+
+.product-detail-ancle {
+  text-decoration: none;
+  color: #9b9b9b;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.product-detail-price {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.29px;
+}
+
+.product-detail-counter-container {
+  display: flex;
+  gap: 16px;
+}
+
+.product-detail-counter {
+  background-color: #f1f1f1;
+  height: 48px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.product-detail-subtract,
+.product-detail-add {
+  border: none;
+  font-size: 13px;
+  width: 16px;
+  height: 18px;
+  font-weight: bold;
+  color: #b5b5b5;
+}
+
+.product-detail-count {
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .product-detail-image-container {
@@ -699,4 +759,59 @@ body {
 
 .product-main {
   padding-top: 73px;
+}
+
+.product-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  padding: 24px;
+}
+
+.product-feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-feature-container-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 0.86px;
+  text-transform: uppercase;
+}
+
+.product-feature-description {
+  font-size: 15px;
+  line-height: 25px;
+  color: #7d7d7d;
+}
+
+.product-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-feature-elements {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  color: #7d7d7d;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.product-feature-amount {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #d87d4a;
 }

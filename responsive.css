@@ -204,6 +204,38 @@
   .product-main {
     padding-top: 89px;
   }
+
+  .product-detail-page .product-detail-container {
+    flex-direction: row;
+  }
+
+  .product-detail-page .product-detail-image-container {
+    height: 480px;
+  }
+
+  .product-detail-page .product-detail-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .product-feature {
+    gap: 120px;
+    padding: 60px 40px 120px 40px;
+  }
+
+  .product-feature-container-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-feature-title {
+    width: 55%;
+    font-size: 32px;
+  }
+
+  .product-feature-description {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -523,5 +555,46 @@
 
   .collage-img-3 {
     height: 592px;
+  }
+
+  .product-detail-page .product-detail-image-container {
+    height: 560px;
+  }
+
+  .product-detail-page .product-detail-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .product-feature {
+    flex-direction: row;
+    justify-content: center;
+    gap: 125px;
+    padding: 100px 12%;
+  }
+
+  .product-feature-container-row,
+  .product-feature-container-list {
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .product-feature-container {
+    width: 100%;
+  }
+
+  .product-feature-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: 1.14px;
+  }
+
+  .product-feature-description {
+    font-size: 15px;
+    line-height: 25px;
+    color: #7d7d7d;
+    width: 635px;
   }
 }
