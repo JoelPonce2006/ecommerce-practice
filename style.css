@@ -13,6 +13,38 @@ body {
   overflow-x: hidden;
 }
 
+.header-menu {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: -100%;
+  transition: 0.5s ease-in-out;
+  border: none;
+}
+
+.header-menu-open {
+  top: 73px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100dvh;
+  height: 100dvh;
+  z-index: 1;
+  display: none;
+}
+
+.backdrop-open {
+  display: block;
+}
+
 .audiophile-header {
   padding: 24px;
   z-index: 1000;
