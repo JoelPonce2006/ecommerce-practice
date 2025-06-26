@@ -322,6 +322,47 @@
   .checkout-page-layout {
     padding: 48px 39px 116px 39px;
   }
+
+  .modal-succesfull-order-title {
+    font-size: 32px;
+    letter-spacing: 1.14px;
+    line-height: 36px;
+  }
+
+  .modal-succesfull-order-description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .modal-succesfull-order-confirmation-order {
+    flex-direction: row;
+  }
+
+  .modal-succesfull-order-content {
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .modal-succesfull-order-price-container {
+    border-radius: 0px 8px 8px 0px;
+    padding: 41px 73px 42px 24px;
+  }
+
+  .modal-succesfull-order-button {
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background-color: #d87d4a;
+    width: 100%;
+    height: 48px;
+  }
+
+  .modal-img-1 {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 1280px) {

@@ -18,15 +18,84 @@
   </head>
 
   <body>
+    <div id="backdrop" class="backdrop"></div>
+
     <header class="audiophile-header">
       <div class="audiophile-header-container">
-        <button class="menu-icon">
+        <button id="menu-hamburguer" class="menu-icon">
           <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
             <g fill="#FFF" fill-rule="evenodd">
               <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
             </g>
           </svg>
         </button>
+
+        <div id="menu" class="header-menu">
+          <div class="categories-section-container">
+            <div class="categories-section">
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>HEADPHONES</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="#"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>SPEAKERS</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="#"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>EARPHONES</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="#"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <a class="logo" href="/"
           ><img src="./assets/shared/desktop/logo.svg"
@@ -50,30 +119,101 @@
         </button>
       </div>
     </header>
+
     <main class="product-main">
+      <section id="pay-order" class="modal-succesfull-order">
+        <div class="modal-succesfull-order-container">
+          <div class="modal-succesfull-order-container-text">
+            <img
+              class="modal-succesfull-order-image"
+              src="./assets/checkout/icon-order-confirmation.svg"
+              alt=""
+            />
+
+            <h2 class="modal-succesfull-order-title">
+              thank you <br />
+              for your order
+            </h2>
+
+            <p class="modal-succesfull-order-description">
+              You will receive an email confirmation shortly.
+            </p>
+          </div>
+
+          <div class="modal-succesfull-order-confirmation-order">
+            <div class="modal-succesfull-order-content">
+              <li class="cart">
+                <div class="cart-img-1 modal-img-1">
+                  <img
+                    class="headphone-1"
+                    src="./assets/cart/image-xx99-mark-two-headphones.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="cart-summary-quantity">
+                  <div class="cart-info">
+                    <span class="cart-name">XX99 MK II</span>
+
+                    <span class="cart-price">$ 2,999</span>
+                  </div>
+
+                  <span class="qty-number-checkout">x1</span>
+                </div>
+              </li>
+
+              <div class="modal-succesfull-order-line"></div>
+
+              <div class="modal-succesfull-order-list-other-container">
+                <span class="modal-succesfull-order-list-other"
+                  >and 2 other items(s)</span
+                >
+              </div>
+            </div>
+
+            <div class="modal-succesfull-order-price-container">
+              <h2 class="modal-succesfull-order-total">GRAND TOTAL</h2>
+
+              <span class="modal-succesfull-order-price-total">$ 5,446</span>
+            </div>
+          </div>
+
+          <a href="index.html" class="modal-succesfull-order-button"
+            >back to home</a
+          >
+        </div>
+      </section>
+
       <div class="checkout-page-layout">
         <div class="checkout-wrapper">
           <a class="go-back-link" href="">Go Back</a>
+
           <div class="checkout-container">
             <form id="form" class="checkout-box">
               <h1 class="cb-h1">CHECKOUT</h1>
+
               <div class="cb-section">
                 <h2 class="cb-h2">BILLING DETAILS</h2>
+
                 <div class="cb-information-container">
                   <div class="name-email-information">
                     <div class="cb-information">
                       <label class="cb-label">Name</label>
+
                       <input class="cb-input" type="text" />
                     </div>
+
                     <div class="cb-information">
                       <div class="error-format">
                         <label id="emailLabel" for="email" class="cb-label"
                           >Email Address</label
                         >
+
                         <span id="emailError" class="cb-label error-message"
                           >Wrong format</span
                         >
                       </div>
+
                       <input
                         type="email"
                         id="email"
@@ -82,40 +222,52 @@
                       />
                     </div>
                   </div>
+
                   <div class="cb-phone-number-information">
                     <label class="cb-label">Phone Number</label>
+
                     <input class="cb-input" type="number" />
                   </div>
                 </div>
               </div>
               <div class="cb-section">
                 <h2 class="cb-h2">SHIPPING INFO</h2>
+
                 <div class="cb-information-container">
                   <div class="cb-information">
                     <label class="cb-label">Your Address</label>
+
                     <input class="cb-input" type="text" />
                   </div>
+
                   <div class="zip-city-information">
                     <div class="cb-information">
                       <label class="cb-label">Zip Code</label>
+
                       <input class="cb-input" type="number" />
                     </div>
+
                     <div class="cb-information">
                       <label class="cb-label">City</label>
+
                       <input class="cb-input" type="text" />
                     </div>
                   </div>
+
                   <div class="cb-country-information">
                     <label class="cb-label">Country</label>
+
                     <input class="cb-input" type="text" />
                   </div>
                 </div>
               </div>
               <div class="cb-section">
                 <h2 class="cb-h2">PAYMENT DETAILS</h2>
+
                 <div class="cb-payment-container">
                   <div class="cb-payment">
                     <label class="cb-label">Payment Method</label>
+
                     <div class="payment-options-container">
                       <label for="e-money" class="option">
                         <input
@@ -124,8 +276,10 @@
                           type="radio"
                           name="payment-method"
                         />
+
                         <span class="cb-label" for="e-money">e-Money</span>
                       </label>
+
                       <label for="cash-delivery" class="option">
                         <input
                           id="cash-delivery"
@@ -133,6 +287,7 @@
                           type="radio"
                           name="payment-method"
                         />
+
                         <span class="cb-label" for="cash-delivery"
                           >Cash on Delivery</span
                         >
@@ -142,12 +297,16 @@
                   <div class="cb-pay-way-container">
                     <div id="e-money-number" class="cb-information hidden">
                       <label class="cb-label">e-Money Number</label>
+
                       <input class="cb-input" type="number" />
                     </div>
+
                     <div id="e-money-pin" class="cb-information hidden">
                       <label class="cb-label">e-Money PIN</label>
+
                       <input class="cb-input" type="number" />
                     </div>
+
                     <div id="cash-info" class="cash-delivery hidden">
                       <div class="cash-delivery-icon-container">
                         <img
@@ -156,6 +315,7 @@
                           alt=""
                         />
                       </div>
+
                       <span class="cash-delivery-span"
                         >The ‘Cash on Delivery’ option enables you to pay in
                         cash when our delivery courier arrives at your
@@ -169,6 +329,7 @@
             </form>
             <div class="summary-box">
               <h2 class="summary-h2">SUMMARY</h2>
+
               <section class="cart-summary-container">
                 <ul class="cart-list">
                   <li class="cart">
@@ -179,14 +340,18 @@
                         alt=""
                       />
                     </div>
+
                     <div class="cart-summary-quantity">
                       <div class="cart-info">
                         <span class="cart-name">XX99 MK II</span>
+
                         <span class="cart-price">$ 2,999</span>
                       </div>
+
                       <span class="qty-number-checkout">x1</span>
                     </div>
                   </li>
+
                   <li class="cart">
                     <div class="cart-img-1">
                       <img
@@ -195,14 +360,18 @@
                         alt=""
                       />
                     </div>
+
                     <div class="cart-summary-quantity">
                       <div class="cart-info">
                         <span class="cart-name">XX59</span>
+
                         <span class="cart-price">$ 899</span>
                       </div>
+
                       <span class="qty-number-checkout">x2</span>
                     </div>
                   </li>
+
                   <li class="cart">
                     <div class="cart-img-1">
                       <img
@@ -211,37 +380,49 @@
                         alt=""
                       />
                     </div>
+
                     <div class="cart-summary-quantity">
                       <div class="cart-info">
                         <span class="cart-name">YX1</span>
+
                         <span class="cart-price">$ 599</span>
                       </div>
+
                       <span class="qty-number-checkout">x1</span>
                     </div>
                   </li>
                 </ul>
               </section>
+
               <div class="total-price-container">
                 <div class="total-price">
                   <div class="price">
                     <span class="value-info">TOTAL</span>
+
                     <span class="value">$ 5,396</span>
                   </div>
+
                   <div class="price">
                     <span class="value-info">SHIPPING</span>
+
                     <span class="value">$ 50</span>
                   </div>
+
                   <div class="price">
                     <span class="value-info">VAT (INCLUDED)</span>
+
                     <span class="value">$ 1,079</span>
                   </div>
                 </div>
+
                 <div class="price">
                   <span class="value-info">GRAND TOTAL</span>
+
                   <span class="value-2">$ 5,446</span>
                 </div>
               </div>
-              <button type="submit" class="continue-pay-button">
+
+              <button id="to-pay" type="submit" class="continue-pay-button">
                 CONTINUE & PAY
               </button>
             </div>
@@ -249,19 +430,25 @@
         </div>
       </div>
     </main>
+
     <footer class="footer-container">
       <div class="footer-line"></div>
+
       <div class="logo-nav">
         <a class="logo" href="/"
           ><img src="./assets/shared/desktop/logo.svg"
         /></a>
+
         <nav class="nav-footer">
           <a href="/">Home</a>
           <a href="headphones.html">Headphones</a>
+
           <a href="speakers.html">Speakers</a>
+
           <a href="earphones.html">Earphones</a>
         </nav>
       </div>
+
       <div class="social-media-1">
         <p class="footer-p">
           Audiophile is an all in one stop to fulfill your audio needs. We're a
@@ -269,6 +456,7 @@
           helping you get the most out of personal audio. Come and visit our
           demo facility - we’re open 7 days a week.
         </p>
+
         <div class="social-p">
           <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -295,6 +483,7 @@
           </svg>
         </div>
       </div>
+
       <div class="social-media-2">
         <p class="footer-p">Copyright 2021. All Rights Reserved</p>
         <div class="social">
@@ -305,6 +494,7 @@
               fill-rule="nonzero"
             />
           </svg>
+
           <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
@@ -323,6 +513,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="main.js"></script>
+
     <script src="logica.js"></script>
   </body>
 </html>
