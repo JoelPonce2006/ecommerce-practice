@@ -19,13 +19,80 @@
   <body>
     <header class="audiophile-header">
       <div class="audiophile-header-container">
-        <button class="menu-icon">
+        <button id="menu-hamburguer" class="menu-icon">
           <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
             <g fill="#FFF" fill-rule="evenodd">
               <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
             </g>
           </svg>
         </button>
+
+        <div id="menu" class="header-menu">
+          <div class="categories-section-container">
+            <div class="categories-section">
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>HEADPHONES</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="headphones.html"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>SPEAKERS</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="speakers.html"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>EARPHONES</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="earphones.html"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <a class="logo" href="/"
           ><img src="./assets/shared/desktop/logo.svg"
@@ -50,11 +117,355 @@
       </div>
     </header>
 
-    <main>
-      <section>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <h1>HEADPHONES</h1>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <main class="product-main">
+      <section class="product-detail product-detail-page">
+        <a class="product-detail-ancle" href="speakers.html">Go Back</a>
+
+        <div class="product-detail-container">
+          <picture class="product-detail-image-container">
+            <source
+              media="(min-width: 1280px)"
+              srcset="./assets/home/desktop/image-speaker-zx9.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/home/mobile/image-speaker-zx9.png"
+            />
+            <img
+              class="product-detail-image"
+              src="./assets/home/mobile/image-speaker-zx9.png"
+              alt=""
+            />
+          </picture>
+
+          <div class="product-detail-content">
+            <div class="product-detail-title-group">
+              <span class="product-detail-new-product">new product</span>
+
+              <h2 class="product-detail-title">
+                ZX9 <br />
+                SPEAKER
+              </h2>
+            </div>
+
+            <p class="product-detail-description">
+              Upgrade your sound system with the all new ZX9 active speaker.
+              It’s a bookshelf speaker system that offers truly wireless
+              connectivity -- creating new possibilities for more pleasing and
+              practical audio setups.
+            </p>
+
+            <a
+              href="headphone-details-1.html"
+              class="product-detail-see-product button-banner"
+            >
+              see product
+            </a>
+
+            <span class="product-detail-price">$ 4,500</span>
+
+            <div class="product-detail-counter-container">
+              <div class="product-detail-counter">
+                <button class="product-detail-subtract">-</button>
+                <span class="product-detail-count">1</span>
+                <button class="product-detail-add">+</button>
+              </div>
+
+              <button class="button-banner">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-feature">
+        <div class="product-feature-container">
+          <h2 class="product-feature-title">features</h2>
+
+          <p class="product-feature-description">
+            Connect via Bluetooth or nearly any wired source. This speaker
+            features optical, digital coaxial, USB Type-B, stereo RCA, and
+            stereo XLR inputs, allowing you to have up to five wired source
+            devices connected for easy switching. Improved bluetooth technology
+            offers near lossless audio quality at up to 328ft (100m).
+          </p>
+
+          <p class="product-feature-description">
+            Discover clear, more natural sounding highs than the competition
+            with ZX9’s signature planar diaphragm tweeter. Equally important is
+            its powerful room-shaking bass courtesy of a 6.5” aluminum alloy
+            bass unit. You’ll be able to enjoy equal sound quality whether in a
+            large room or small den. Furthermore, you will experience new
+            sensations from old songs since it can respond to even the subtle
+            waveforms.
+          </p>
+        </div>
+
+        <div
+          class="product-feature-container-list product-feature-container-row"
+        >
+          <h2 class="product-feature-title">in the box</h2>
+
+          <ul class="product-feature-list">
+            <li class="product-feature-elements">
+              <span class="product-feature-amount">2x</span> Speaker Unit
+            </li>
+            <li class="product-feature-elements">
+              <span class="product-feature-amount">2x</span> Speaker Cloth Panel
+            </li>
+            <li class="product-feature-elements">
+              <span class="product-feature-amount">1x</span> User Manual
+            </li>
+            <li class="product-feature-elements">
+              <span class="product-feature-amount">1x</span> 3.5mm 10m Audio
+              Cable
+            </li>
+            <li class="product-feature-elements">
+              <span class="product-feature-amount">1x</span> 10m Optical Cable
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="collage-container">
+        <div class="collage">
+          <div class="collage-container-left">
+            <div class="collage-img-1">
+              <img
+                class="img-gallery"
+                src="./assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="collage-img-2">
+              <img
+                class="img-gallery"
+                src="./assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="collage-img-3">
+            <img
+              class="img-gallery"
+              src="./assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <span class="product-suggestions-you-may-also-like"
+        >you may also like</span
+      >
+
+      <section class="product-suggestions-container">
+        <section class="product-suggestions">
+          <div class="product-suggestions-list">
+            <div class="product-suggestions-item">
+              <picture class="product-suggestions-image-container">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./assets/shared/desktop/image-xx99-mark-one-headphones.png
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./assets/shared/tablet/image-xx99-mark-one-headphones.png
+                  "
+                />
+                <img
+                  class="product-suggestions-image"
+                  src="./assets/shared/mobile/image-xx99-mark-one-headphones.png"
+                  alt=""
+                />
+              </picture>
+
+              <div class="product-suggestions-content">
+                <div class="product-suggestions-title-group">
+                  <h2 class="product-suggestions-title">XX99 Mark I</h2>
+                </div>
+
+                <a href="headphone-details-2.html" class="button-banner">
+                  see product
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-suggestions">
+          <div class="product-suggestions-list">
+            <div class="product-suggestions-item">
+              <picture class="product-suggestions-image-container">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./assets/shared/desktop/image-xx59-headphones.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/shared/tablet/image-xx59-headphones.png"
+                />
+                <img
+                  class="product-suggestions-image"
+                  src="./assets/shared/mobile/image-xx59-headphones.png"
+                  alt=""
+                />
+              </picture>
+
+              <div class="product-suggestions-content">
+                <div class="product-suggestions-title-group">
+                  <h2 class="product-suggestions-title">XX59</h2>
+                </div>
+
+                <a href="headphone-details-3.html" class="button-banner">
+                  see product
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="product-suggestions">
+          <div class="product-suggestions-list">
+            <div class="product-suggestions-item">
+              <picture class="product-suggestions-image-container">
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./assets/home/desktop/image-speaker-zx9.png"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./assets/home/tablet/image-speaker-zx9.png"
+                />
+                <img
+                  class="product-suggestions-image product-suggestions-image-zx9"
+                  src="./assets/home/mobile/image-speaker-zx9.png"
+                  alt=""
+                />
+              </picture>
+
+              <div class="product-suggestions-content">
+                <div class="product-suggestions-title-group">
+                  <h2 class="product-suggestions-title">zx9 speaker</h2>
+                </div>
+
+                <a href="speaker-details-1.html" class="button-banner">
+                  see product
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="categories-section-container">
+        <div class="categories-section">
+          <div class="category">
+            <img
+              class="product-image"
+              src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+              alt=""
+            />
+            <div class="redirection">
+              <h3>HEADPHONES</h3>
+              <div class="arrow">
+                <a class="shop-link" href="headphones.html"
+                  >SHOP <span class="arrow"></span
+                ></a>
+                <img
+                  class="arrow-icon"
+                  src="./assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <img
+              class="product-image"
+              src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+              alt=""
+            />
+            <div class="redirection">
+              <h3>SPEAKERS</h3>
+              <div class="arrow">
+                <a class="shop-link" href="speakers.html"
+                  >SHOP <span class="arrow"></span
+                ></a>
+                <img
+                  class="arrow-icon"
+                  src="./assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <img
+              class="product-image"
+              src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+              alt=""
+            />
+            <div class="redirection">
+              <h3>EARPHONES</h3>
+              <div class="arrow">
+                <a class="shop-link" href="earphones.html"
+                  >SHOP <span class="arrow"></span
+                ></a>
+                <img
+                  class="arrow-icon"
+                  src="./assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="box-best-gear">
+        <div class="best-gear">
+          <div class="box-image-bg">
+            <img
+              class="image-best-gear"
+              src="./assets/shared/mobile/image-best-gear.jpg"
+              alt=""
+            />
+
+            <img
+              class="image-best-gear-tablet"
+              src="./assets/shared/tablet/image-best-gear.jpg"
+              alt=""
+            />
+
+            <img
+              class="image-best-gear-desktop"
+              src="./assets/shared/desktop/image-best-gear.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="text-best-gear">
+            <h2 class="title-bg">
+              Bringing you the <span class="span-best-gear">best</span> audio
+              gear
+            </h2>
+
+            <p class="paragraph-bg">
+              Located at the heart of New York City, Audiophile is the premier
+              store for high end headphones, earphones, speakers, and audio
+              accessories. We have a large showroom and luxury demonstration
+              rooms available for you to browse and experience a wide range of
+              our products. Stop by our store to meet some of the fantastic
+              people who make Audiophile the best place to buy your portable
+              audio equipment.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
 

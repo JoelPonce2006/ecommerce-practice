@@ -19,13 +19,80 @@
   <body>
     <header class="audiophile-header">
       <div class="audiophile-header-container">
-        <button class="menu-icon">
+        <button id="menu-hamburguer" class="menu-icon">
           <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
             <g fill="#FFF" fill-rule="evenodd">
               <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
             </g>
           </svg>
         </button>
+
+        <div id="menu" class="header-menu">
+          <div class="categories-section-container">
+            <div class="categories-section">
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>HEADPHONES</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="headphones.html"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>SPEAKERS</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="speakers.html"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="category">
+                <img
+                  class="product-image"
+                  src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+                  alt=""
+                />
+                <div class="redirection">
+                  <h3>EARPHONES</h3>
+                  <div class="arrow">
+                    <a class="shop-link" href="earphones.html"
+                      >SHOP <span class="arrow"></span
+                    ></a>
+                    <img
+                      class="arrow-icon"
+                      src="./assets/shared/desktop/icon-arrow-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <a class="logo" href="/"
           ><img src="./assets/shared/desktop/logo.svg"
@@ -54,6 +121,157 @@
       <section class="banner-product">
         <div class="container">
           <h1 class="hs-banner-product">EARPHONES</h1>
+        </div>
+      </section>
+
+      <section class="product-detail">
+        <div class="product-detail-container">
+          <picture class="product-detail-image-container">
+            <source
+              media="(min-width: 1280px)"
+              srcset="./assets/product-yx1-earphones/desktop/image-product.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/product-yx1-earphones/mobile/image-product.jpg"
+            />
+            <img
+              class="product-detail-image"
+              src="./assets/product-yx1-earphones/mobile/image-product.jpg"
+              alt=""
+            />
+          </picture>
+
+          <div class="product-detail-content">
+            <div class="product-detail-title-group">
+              <span class="product-detail-new-product">new product</span>
+
+              <h2 class="product-detail-title">
+                YX1 WIRELESS <br />
+                EARPHONES
+              </h2>
+            </div>
+
+            <p class="product-detail-description">
+              Tailor your listening experience with bespoke dynamic drivers from
+              the new YX1 Wireless Earphones. Enjoy incredible high-fidelity
+              sound even in noisy environments with its active noise
+              cancellation feature.
+            </p>
+
+            <a
+              href="earphone-details-1.html"
+              class="product-detail-see-product button-banner"
+            >
+              see product
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories-section-container">
+        <div class="categories-section">
+          <div class="category">
+            <img
+              class="product-image"
+              src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+              alt=""
+            />
+            <div class="redirection">
+              <h3>HEADPHONES</h3>
+              <div class="arrow">
+                <a class="shop-link" href="#"
+                  >SHOP <span class="arrow"></span
+                ></a>
+                <img
+                  class="arrow-icon"
+                  src="./assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <img
+              class="product-image"
+              src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+              alt=""
+            />
+            <div class="redirection">
+              <h3>SPEAKERS</h3>
+              <div class="arrow">
+                <a class="shop-link" href="#"
+                  >SHOP <span class="arrow"></span
+                ></a>
+                <img
+                  class="arrow-icon"
+                  src="./assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <img
+              class="product-image"
+              src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+              alt=""
+            />
+            <div class="redirection">
+              <h3>EARPHONES</h3>
+              <div class="arrow">
+                <a class="shop-link" href="#"
+                  >SHOP <span class="arrow"></span
+                ></a>
+                <img
+                  class="arrow-icon"
+                  src="./assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="box-best-gear">
+        <div class="best-gear">
+          <div class="box-image-bg">
+            <img
+              class="image-best-gear"
+              src="./assets/shared/mobile/image-best-gear.jpg"
+              alt=""
+            />
+
+            <img
+              class="image-best-gear-tablet"
+              src="./assets/shared/tablet/image-best-gear.jpg"
+              alt=""
+            />
+
+            <img
+              class="image-best-gear-desktop"
+              src="./assets/shared/desktop/image-best-gear.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="text-best-gear">
+            <h2 class="title-bg">
+              Bringing you the <span class="span-best-gear">best</span> audio
+              gear
+            </h2>
+
+            <p class="paragraph-bg">
+              Located at the heart of New York City, Audiophile is the premier
+              store for high end headphones, earphones, speakers, and audio
+              accessories. We have a large showroom and luxury demonstration
+              rooms available for you to browse and experience a wide range of
+              our products. Stop by our store to meet some of the fantastic
+              people who make Audiophile the best place to buy your portable
+              audio equipment.
+            </p>
+          </div>
         </div>
       </section>
     </main>
