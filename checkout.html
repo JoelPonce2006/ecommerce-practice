@@ -186,8 +186,7 @@
 
       <div class="checkout-page-layout">
         <div class="checkout-wrapper">
-          <a class="go-back-link" href="">Go Back</a>
-
+          <a id="goBackLink" class="go-back-link" href="#">Go Back</a>
           <div class="checkout-container">
             <form id="form" class="checkout-box">
               <h1 class="cb-h1">CHECKOUT</h1>
@@ -331,8 +330,8 @@
               <h2 class="summary-h2">SUMMARY</h2>
 
               <section class="cart-summary-container">
-                <ul class="cart-list">
-                  <li class="cart">
+                <ul id="checkoutSummaryList" class="cart-list">
+                  <!-- <li class="cart">
                     <div class="cart-img-1">
                       <img
                         class="headphone-1"
@@ -390,7 +389,7 @@
 
                       <span class="qty-number-checkout">x1</span>
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
               </section>
 
@@ -398,27 +397,23 @@
                 <div class="total-price">
                   <div class="price">
                     <span class="value-info">TOTAL</span>
-
-                    <span class="value">$ 5,396</span>
+                    <span class="value" id="checkoutTotal">$ 0</span>
                   </div>
 
                   <div class="price">
                     <span class="value-info">SHIPPING</span>
-
-                    <span class="value">$ 50</span>
+                    <span class="value" id="checkoutShipping">$ 0</span>
                   </div>
 
                   <div class="price">
                     <span class="value-info">VAT (INCLUDED)</span>
-
-                    <span class="value">$ 1,079</span>
+                    <span class="value" id="checkoutVat">$ 0</span>
                   </div>
                 </div>
 
                 <div class="price">
                   <span class="value-info">GRAND TOTAL</span>
-
-                  <span class="value-2">$ 5,446</span>
+                  <span class="value-2" id="checkoutGrandTotal">$ 0</span>
                 </div>
               </div>
 

@@ -7,6 +7,7 @@
 
     <link rel="icon" href="./assets/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="logica.js" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -172,7 +173,14 @@
                   <button class="product-detail-add">+</button>
                 </div>
 
-                <button class="button-banner">Add To Cart</button>
+                <button
+                  class="button-banner"
+                  data-name="XX59"
+                  data-price="899"
+                  data-image="./assets/cart/image-xx59-headphones.jpg"
+                >
+                  Add To Cart
+                </button>
               </div>
             </div>
           </div>
@@ -542,7 +550,102 @@
         </div>
       </div>
     </footer>
-
+    <div id="cartOverlay" class="cart-overlay hidden">
+      <div id="cartPopover" class="cart-popover">
+        <div class="cart-box">
+          <div class="cart-remove">
+            <h2 class="summary-h2">CART (<span id="cartCount">0</span>)</h2>
+            <button id="removeAll" class="remove-cart-button">
+              Remove all
+            </button>
+          </div>
+          <section class="cart-products-container">
+            <ul id="cartProductsList" class="cart-products-list">
+              <!-- <li class="cart">
+                <div class="cart-img-1">
+                  <img
+                    class="headphone-1"
+                    src="./assets/cart/image-xx99-mark-two-headphones.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name-product-quantity">
+                  <div class="cart-info">
+                    <span class="cart-name">XX99 MK II</span>
+                    <span class="cart-price">$ 2,999</span>
+                  </div>
+                  <div class="quantity-selector-container">
+                    <div class="quantity-selector">
+                      <button class="qty-btn">-</button>
+                      <span class="qty-number">1</span>
+                      <button class="qty-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cart">
+                <div class="cart-img-1">
+                  <img
+                    class="headphone-1"
+                    src="./assets/cart/image-xx59-headphones.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name-product-quantity">
+                  <div class="cart-info">
+                    <span class="cart-name">XX59</span>
+                    <span class="cart-price">$ 899</span>
+                  </div>
+                  <div class="quantity-selector-container">
+                    <div class="quantity-selector">
+                      <button class="qty-btn">-</button>
+                      <span class="qty-number">1</span>
+                      <button class="qty-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cart">
+                <div class="cart-img-1">
+                  <img
+                    class="headphone-1"
+                    src="./assets/cart/image-yx1-earphones.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="name-product-quantity">
+                  <div class="cart-info">
+                    <span class="cart-name">YX1</span>
+                    <span class="cart-price">$ 599</span>
+                  </div>
+                  <div class="quantity-selector-container">
+                    <div class="quantity-selector">
+                      <button class="qty-btn">-</button>
+                      <span class="qty-number">1</span>
+                      <button class="qty-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </section>
+          <div class="total-price-container">
+            <div class="total-price">
+              <div class="price">
+                <span class="value-info">TOTAL</span>
+                <span class="value">$ 5,396</span>
+              </div>
+            </div>
+          </div>
+          <a class="checkout-page" href="checkout.html"
+            ><button id="checkoutBtn" class="continue-pay-button">
+              CHECKOUT
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
     <script src="./main.js"></script>
+    <script src="logica.js"></script>
   </body>
 </html>

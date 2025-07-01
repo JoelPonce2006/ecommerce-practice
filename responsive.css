@@ -367,6 +367,23 @@
   .header-menu-open {
     top: 89px;
   }
+
+  .cart-overlay {
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  .cart-box {
+    width: 60%; /* se adapta al ancho disponible */
+    max-width: 720px;
+    margin-left: auto; /* <- Esto lo empuja a la derecha */
+    margin-right: 0;
+  }
+
+  .cart-popover {
+    padding: 24px 40px;
+    top: 88px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -778,5 +795,14 @@
 
   .summary-box {
     width: 60%;
+  }
+
+  .cart-box {
+    width: 45%;
+    max-width: 1000px;
+  }
+
+  .cart-popover {
+    padding: 36px 165px;
   }
 }
