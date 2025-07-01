@@ -182,6 +182,11 @@ body {
 }
 
 .button-zx9 {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background-color: black;
   width: 160px;
@@ -195,6 +200,10 @@ body {
 }
 
 .button-zx7 {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
   background-color: transparent;
   width: 160px;
